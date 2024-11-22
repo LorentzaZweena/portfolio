@@ -31,12 +31,10 @@
 			<a href="#home">Home</a>
 			<a href="#about">About</a> 
 			<a href="#products">Projects</a> 
-			<a href="#">Contact</a>
+			<a href="#contact">Contact</a>
 		</nav>
 		<div class="icons">
-			<!-- <a href="" class="fa-brands fa-instagram"></a> -->
-			<a href="#" class="fa-solid fa-language" target="_blank"></a>
-			<!-- <a href="" class="fas fa-user"></a> -->
+			<button id="translateBtn" class="fa-solid fa-language" style="font-size: 2em;"></button>
 		</div>
 	</header>
 
@@ -50,7 +48,7 @@
 			</div>
 
 			<div class="gambar">
-				<img src="./img/8e473ed665ed5fe89a8b65cb8e50c5ca.jpg">
+				<img src="./img/WhatsApp Image 2024-11-22 at 09.33.28.jpeg">
 			</div>
 	</section>
 
@@ -59,7 +57,7 @@
 		<h1 class="heading"><span>About </span>Me</h1>
 		<div class="row">
 			<div class="image-container">
-                <img src="./img/8e473ed665ed5fe89a8b65cb8e50c5ca.jpg" alt="">
+                <img src="./img/WhatsApp Image 2024-11-22 at 09.38.33.png" alt="">
             </div>
             
 			<div class="content">
@@ -332,13 +330,12 @@
 		</div>
 	</section> -->
 
-	<section class="about" id="about">
-		<h1 class="heading">My <span>certification</span></h1>
+	<section class="about" id="certification">
+		<h1 class="heading">My <span>certifications</span></h1>
 		<div class="row">
 			<div class="content">
 				<h3 id="pesat">Web application, web design, etc</h3>
-				<p> I am a XII grade student majoring in Software Engineering at SMK Informatika Pesat, with a deep passion for technology and innovation. Throughout my academic journey, I have developed a strong interest in programming, particularly in the area of web development.</p>
-				<p>I am proficient in Figma, where I design intuitive user interfaces and responsive layouts to enhance the user experience (UI/UX). My experience in both front-end and back-end development has given me valuable insights into the entire web development process, from concept to deployment.</p>
+				<p> I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.</p>
 				<a href="" class="btn" target="_blank">Download CV</a>
 			</div>
 
@@ -367,6 +364,38 @@
 		</div>
 	</section>
 
+	<section class="icons-container" id="contact">
+		<div class="icons">
+			<i class='bx bxl-instagram'></i>
+			<div class="info">
+				<h3>Instagram</h3>
+				<span>ar07zwn</span>
+			</div>
+		</div>
+		<div class="icons">
+			<i class='bx bxl-github'></i>
+			<div class="info">
+				<h3>Github</h3>
+				<span>LorentzaZweena</span>
+			</div>
+		</div>
+		<div class="icons">
+			<i class='bx bxl-tiktok'></i>
+			<div class="info">
+				<h3>Tiktok</h3>
+				<span>zweena63</span>
+			</div>
+		</div>
+		<div class="icons">
+			<i class='bx bxl-gmail'></i>
+			<div class="info">
+				<h3>Email</h3>
+				<span>ariva02zweena@gmail.com</span>
+			</div>
+		</div>
+	</section>
+
+
 	<section class="footer">
 		<div class="box-container">
 			<div class="box">
@@ -385,18 +414,18 @@
 			</div>
 			<div class="box">
 				<h3>Address</h3>
-				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
-				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
-				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
+				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Jalan komplek PWI</a>
+				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Cilebut barat, Bogor</a>
+				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Sukaraja</a>
 			</div>
 			<div class="box">
 				<h3>Contact</h3>
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
+				<a href="https://www.instagram.com/ar07zwn/?igsh=MTFmeHdtMGZ6Y3kzbQ%3D%3D" target="_blank">Instagram</a>
+				<a href="">Email</a>
+				<a href="https://www.tiktok.com/@zweena63?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a>
 			</div>
 		</div>
-		<div class="credit">Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>:3</div>
+		<div class="credit">Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS</div>
 	</section>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
@@ -448,6 +477,78 @@
 			  dots[slideIndex-1].className += " active";
 			}
 			</script>
-		
+			<script>
+				const translateBtn = document.getElementById('translateBtn');
+				let isIndonesian = false;
+				
+				translateBtn.addEventListener('click', function() {
+					if (!isIndonesian) {
+						// Translate to Indonesian
+						document.querySelector('.navbar a:nth-child(1)').textContent = 'Beranda';
+						document.querySelector('.navbar a:nth-child(2)').textContent = 'Tentang';
+						document.querySelector('.navbar a:nth-child(3)').textContent = 'Proyek';
+						document.querySelector('.navbar a:nth-child(4)').textContent = 'Kontak';
+						document.querySelector('.content h3').textContent = 'Halo, Saya';
+						document.querySelector('.content p').textContent = 'Saya adalah programmer web dengan passion untuk membangun aplikasi web yang bersih, efisien, dan terukur. Saya mengkhususkan diri dalam pengembangan front-end dan back-end, menggunakan berbagai teknologi seperti PHP, HTML, CSS, Javascript, Laravel, dan Github.';
+						document.querySelector('.content .btn').textContent = 'Pelajari lebih lanjut';
+						
+						// About section
+						document.querySelector('.about .heading').innerHTML = '<span>Tentang </span>Saya';
+						document.querySelector('#pesat').textContent = 'Rekayasa Perangkat Lunak';
+						document.querySelector('.about .content p:nth-child(2)').textContent = 'Saya adalah siswa kelas XII jurusan Rekayasa Perangkat Lunak di SMK Informatika Pesat, dengan passion mendalam untuk teknologi dan inovasi. Selama perjalanan akademik saya, saya telah mengembangkan minat yang kuat dalam pemrograman, khususnya di bidang pengembangan web.';
+						document.querySelector('.about .content p:nth-child(3)').textContent = 'Saya mahir dalam Figma, di mana saya mendesain antarmuka pengguna yang intuitif dan tata letak responsif untuk meningkatkan pengalaman pengguna (UI/UX). Pengalaman saya dalam pengembangan front-end dan back-end telah memberikan wawasan berharga dalam seluruh proses pengembangan web, dari konsep hingga penerapan.';
+						document.querySelector('.about .btn').textContent = 'Unduh CV';
+				
+						// Projects section
+						document.querySelector('.products .heading').innerHTML = 'Proyek <span>Saya</span>';
+						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'Lihat detail');
+						
+						// More info section
+						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Bahasa sisi server';
+						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Menyimpan, berbagi, dan berkolaborasi pada kode';
+						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Framework PHP open-source';
+
+						document.querySelector('.about#certification .heading').innerHTML = 'Sertifikasi <span>Saya</span>';
+document.querySelector('.about#certification h3#pesat').textContent = 'Aplikasi web, desain web, dll';
+document.querySelector('.about#certification .content p').textContent = 'Saya ingin terus belajar dan berkembang secara profesional, dan saya telah mendapatkan sertifikasi di berbagai bidang untuk meningkatkan keterampilan dan keahlian saya. Sertifikasi ini mencerminkan dedikasi saya untuk tetap mengikuti tren dan praktik terbaik industri. Setiap sertifikasi mewakili langkah penting dalam perjalanan saya untuk memberikan layanan dan solusi berkualitas tinggi. Di bawah ini adalah daftar sertifikasi yang telah saya peroleh, menunjukkan kemahiran saya di bidang-bidang utama dan komitmen saya untuk memberikan hasil yang luar biasa.';
+				
+						// Footer
+						document.querySelector('.footer .box:nth-child(1) h3').textContent = 'Menu';
+						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'Aktivitas Saya';
+						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Alamat';
+						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Kontak';
+						document.querySelector('.credit').innerHTML = 'Dibuat oleh <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS';
+						
+						} else {
+						// Translate back to English
+						document.querySelector('.navbar a:nth-child(1)').textContent = 'Home';
+						document.querySelector('.navbar a:nth-child(2)').textContent = 'About';
+						document.querySelector('.navbar a:nth-child(3)').textContent = 'Projects';
+						document.querySelector('.navbar a:nth-child(4)').textContent = 'Contact';
+						document.querySelector('.content h3').textContent = "Hello, I'm";
+						document.querySelector('.content p').textContent = "I'm a web programmer with a passion for building clean, efficient, and scalable web applications. I specialize in both front-end and back-end development, using a range of technologies like PHP, HTML, CSS, Javascript, Laravel, and Github.";
+						document.querySelector('.content .btn').textContent = 'Learn more';
+
+						document.querySelector('.about .heading').innerHTML = '<span>About </span>Me';
+						document.querySelector('#pesat').textContent = 'Software Engineering';
+						document.querySelector('.about .content p:nth-child(2)').textContent = 'I am a XII grade student majoring in Software Engineering at SMK Informatika Pesat, with a deep passion for technology and innovation. Throughout my academic journey, I have developed a strong interest in programming, particularly in the area of web development.';
+						document.querySelector('.about .content p:nth-child(3)').textContent = 'I am proficient in Figma, where I design intuitive user interfaces and responsive layouts to enhance the user experience (UI/UX). My experience in both front-end and back-end development has given me valuable insights into the entire web development process, from concept to deployment.';
+						document.querySelector('.about .btn').textContent = 'Download CV';
+
+						document.querySelector('.products .heading').innerHTML = 'My <span>Projects</span>';
+						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'See more');
+
+						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Server-side language';
+						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Storing, sharing, and collaborating on code';
+						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Open-source PHP framework';
+						
+						// Certification section
+						document.querySelector('.about#certification .heading').innerHTML = 'My <span>Certification</span>';
+document.querySelector('.about#certification h3#pesat').textContent = 'Web application, web design, etc';
+document.querySelector('.about#certification .content p').textContent = 'I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.';
+					}
+					isIndonesian = !isIndonesian;
+				});
+				</script>
 </body>
 </html>
