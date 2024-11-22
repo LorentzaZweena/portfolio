@@ -35,7 +35,7 @@
 		</nav>
 		<div class="icons">
 			<!-- <a href="" class="fa-brands fa-instagram"></a> -->
-			<a href="https://github.com/LorentzaZweena" class="fa-brands fa-github" target="_blank"></a>
+			<a href="#" class="fa-solid fa-language" target="_blank"></a>
 			<!-- <a href="" class="fas fa-user"></a> -->
 		</div>
 	</header>
@@ -333,22 +333,39 @@
 	</section> -->
 
 	<section class="about" id="about">
-		<h1 class="heading"><span>My </span><span>achievement</span></h1>
+		<h1 class="heading">My <span>certification</span></h1>
 		<div class="row">
 			<div class="content">
-				<h3 id="pesat">Software Engineering</h3>
+				<h3 id="pesat">Web application, web design, etc</h3>
 				<p> I am a XII grade student majoring in Software Engineering at SMK Informatika Pesat, with a deep passion for technology and innovation. Throughout my academic journey, I have developed a strong interest in programming, particularly in the area of web development.</p>
 				<p>I am proficient in Figma, where I design intuitive user interfaces and responsive layouts to enhance the user experience (UI/UX). My experience in both front-end and back-end development has given me valuable insights into the entire web development process, from concept to deployment.</p>
 				<a href="" class="btn" target="_blank">Download CV</a>
 			</div>
 
-			<div class="image-container">
-                <img src="./img/8e473ed665ed5fe89a8b65cb8e50c5ca.jpg" alt="">
-            </div>
-            
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="./img/sertikom1.PNG">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="./img/sertikom2.PNG">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="./img/sertikom3.PNG">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/sertikom4.PNG">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			
+				<br>
 		</div>
 	</section>
-
 
 	<section class="footer">
 		<div class="box-container">
@@ -371,10 +388,9 @@
 				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
 				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
 				<a href="https://maps.app.goo.gl/AB52Nm2AqM6vY7PD8" target="_blank"></a>
-				<!-- <a href="">France</a> -->
 			</div>
 			<div class="box">
-				<h3>Kontak</h3>
+				<h3>Contact</h3>
 				<a href=""></a>
 				<a href=""></a>
 				<a href=""></a>
@@ -404,7 +420,34 @@
 			});
 		});
 		</script>
-		
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
 		
 </body>
 </html>
