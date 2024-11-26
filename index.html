@@ -111,7 +111,7 @@
 			<div class="box">
 				<!-- <span class="discount">-20%</span> -->
 				<div class="image">
-					<img src="./img/tiga.PNG">
+					<img src="./img/delapan.PNG">
 					<div class="icons">
 						<a href="" class="fa-brands fa-github"></a>
 						<a href="https://www.google.com/url?q=https%3A%2F%2Fwww.figma.com%2Ffile%2FeRwwpGekqTuYepbmegPWKu%2Fsuround%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DUCMzcdFTDFei5SBU-1&sa=D&sntz=1&usg=AOvVaw2zQZUQbLlQZNUoaOtCBwOI" class="cart-btn">See more</a>
@@ -119,10 +119,10 @@
 					</div>
 				</div>
 				<div class="content">
-					<h3>Suround</h3>
+					<h3>Cashier system</h3>
 					<div class="price">
-						UI / UX Design
-						<!-- <span>$15.99</span> -->
+						Web application
+						<span style="text-decoration: none;">front-end only</span>
 					</div>
 				</div>
 			</div>
@@ -131,7 +131,7 @@
 				<div class="image">
 					<img src="./img/empat.PNG">
 					<div class="icons">
-						<a href="" class="fa-brands fa-github"></a>
+						<a href="" class="fa-brands fa-figma"></a>
 						<a href="https://www.figma.com/design/KKBMwRyubOnSU5yfpSqOYV/sertikom?node-id=0-1&node-type=canvas" class="cart-btn">See more</a>
 						<a href="" class="fas fa-share"></a>
 					</div>
@@ -518,6 +518,11 @@ document.querySelector('.about#certification .content p').textContent = 'Saya in
 						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Alamat';
 						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Kontak';
 						document.querySelector('.credit').innerHTML = 'Dibuat oleh <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS';
+
+							document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Beranda';
+							document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'Tentang saya';
+							document.querySelector('.footer .box:nth-child(1) a:nth-child(4)').textContent = 'Proyek saya';
+							document.querySelector('.footer .box:nth-child(1) a:nth-child(5)').textContent = 'Kontak';	
 						
 						} else {
 						// Translate back to English
@@ -544,9 +549,37 @@ document.querySelector('.about#certification .content p').textContent = 'Saya in
 						
 						// Certification section
 						document.querySelector('.about#certification .heading').innerHTML = 'My <span>Certifications</span>';
-document.querySelector('.about#certification h3#pesat').textContent = 'Web application, web design, etc';
-document.querySelector('.about#certification .content p').textContent = 'I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.';
+						document.querySelector('.about#certification h3#pesat').textContent = 'Web application, web design, etc';
+						document.querySelector('.about#certification .content p').textContent = 'I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.';
+
+						document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Home';
+						document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'About';
+						document.querySelector('.footer .box:nth-child(1) a:nth-child(4)').textContent = 'Projects';
+						document.querySelector('.footer .box:nth-child(1) a:nth-child(5)').textContent = 'Contact';
+
+						// Footer My Activities translation back to English
+						document.querySelector('.footer .box:nth-child(2) a:nth-child(2)').textContent = 'Github';
+						document.querySelector('.footer .box:nth-child(2) a:nth-child(3)').textContent = 'Spotify';
+
+						// Footer Address translation back to English
+						document.querySelector('.footer .box:nth-child(3) a:nth-child(2)').textContent = 'Jalan komplek PWI';
+						document.querySelector('.footer .box:nth-child(3) a:nth-child(3)').textContent = 'Cilebut barat, Bogor';
+						document.querySelector('.footer .box:nth-child(3) a:nth-child(4)').textContent = 'Sukaraja';
+
+						// Footer Contact translation back to English
+						document.querySelector('.footer .box:nth-child(4) a:nth-child(2)').textContent = 'Instagram';
+						document.querySelector('.footer .box:nth-child(4) a:nth-child(3)').textContent = 'Email';
+						document.querySelector('.footer .box:nth-child(4) a:nth-child(4)').textContent = 'Tiktok';
+
+						// Footer
+						document.querySelector('.footer .box:nth-child(1) h3').textContent = 'Quick links';
+						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'My activities';
+						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Address';
+						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Contact';
+						document.querySelector('.credit').innerHTML = 'Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS';
 					}
+
+					// Footer Quick Links translation back to English
 					isIndonesian = !isIndonesian;
 				});
 				</script>
