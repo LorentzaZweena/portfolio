@@ -494,6 +494,18 @@ header .fa-bars{
 	color: var(--pink);
 }
 
+ #bsodOverlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./img/death-10.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: 999999;
+    cursor: none;
+  }
+
 /*responsive*/
 /* Responsive Breakpoints */
 /* Large Devices (990px and below) */

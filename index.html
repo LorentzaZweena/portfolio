@@ -48,7 +48,7 @@
 			</div>
 
 			<div class="gambar">
-				<img src="./img/WhatsApp_Image_2025-08-11_at_15.44.24_e2ee7d7b-removebg-preview-removebg-preview.png">
+				<img src="./img/WhatsApp Image 2025-08-06 at 20.16.08_0bbcc607.jpg">
 			</div>
 	</section>
 
@@ -57,7 +57,7 @@
 		<h1 class="heading"><span>About </span>Me</h1>
 		<div class="row">
 			<div class="image-container">
-                <img src="./img/WhatsApp Image 2025-08-06 at 20.16.08_0bbcc607.jpg" alt="">
+                <img src="./img/WhatsApp_Image_2025-08-11_at_15.44.24_e2ee7d7b-removebg-preview-removebg-preview.png">
             </div>
             
 			<div class="content">
@@ -85,7 +85,7 @@
 					<div class="icons">
 						<a href="https://github.com/LorentzaZweena/Lorentza-Project/tree/master/webdesignprojects/WellEat" class="fa-brands fa-github" target="_blank"></a>
 						<a href="https://welleat.vercel.app/" class="cart-btn" target="_blank">See more</a>
-						<a href="" class="fas fa-share"></a>
+						<a href="https://getbootstrap.com/" class="fa-brands fa-bootstrap"></a>
 					</div>
 				</div>
 				<div class="content">
@@ -103,7 +103,7 @@
 					<div class="icons">
 						<a href="https://github.com/LorentzaZweena/blog-guardian-of-galaxy" class="fa-brands fa-github" target="_blank"></a>
 						<a href="https://blog-guardian-of-galaxy.vercel.app/" class="cart-btn" target="_blank">See more</a>
-						<a href="" class="fas fa-share"></a>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="fa-brands fa-css3"></a>
 					</div>
 				</div>
 				<div class="content">
@@ -119,9 +119,9 @@
 				<div class="image">
 					<img src="./img/lima.PNG">
 					<div class="icons">
-						<a href="" class="fa-brands fa-github"></a>
+						<a href="https://github.com/LorentzaZweena/resumeBuilder.git" class="fa-brands fa-github"></a>
 						<a href="" class="cart-btn">See more</a>
-						<a href="" class="fas fa-share"></a>
+						<a href="https://www.php.net/" class="fa fa-brands fa-php"></a>
 					</div>
 				</div>
 				<div class="content">
@@ -139,7 +139,7 @@
 					<div class="icons">
 						<a href="https://github.com/LorentzaZweena/jobPortal.git" target="_blank" class="fa-brands fa-github"></a>
 						<a href="" class="cart-btn">See more</a>
-						<a href="" class="fas fa-share"></a>
+						<a href="https://laravel.com/" class="fa fa-brands fa-laravel"></a>
 					</div>
 				</div>
 				<div class="content">
@@ -156,17 +156,17 @@
 	<!-- more info -->
 	<section class="icons-container">
 		<div class="icons">
-			<i class="fa-brands fa-figma"></i>
+			<i class="fa-solid fa-database"></i>
 			<div class="info">
-				<h3>Figma</h3>
-				<span>UI / UX Design</span>
+				<h3>Database</h3>
+				<span>Tableplus, MySQL, etc</span>
 			</div>
 		</div>
 		<div class="icons">
-			<i class='bx bxl-php' style='color:#000000' ></i>
+			<i class="fa-brands fa-bootstrap"></i>
 			<div class="info">
-				<h3>PHP</h3>
-				<span>Server-side language</span>
+				<h3>Frameworks</h3>
+				<span>Tailwind & Bootstrap</span>
 			</div>
 		</div>
 		<div class="icons">
@@ -240,10 +240,10 @@
 			</div>
 		</div>
 		<div class="icons">
-			<i class='bx bxl-tiktok'></i>
+			<i class='bx bxl-linkedin'></i>
 			<div class="info">
-				<h3>Tiktok</h3>
-				<span>zweena63</span>
+				<h3>Linkedin</h3>
+				<span>Ariva Zweena</span>
 			</div>
 		</div>
 		<div class="icons">
@@ -269,8 +269,7 @@
 				<h3>My activities</h3>
 				<a href="https://github.com/users/LorentzaZweena/projects/3" target="_blank">Github</a>
 				<a href="https://open.spotify.com/playlist/3PYYvJZdzm7MhppMzIUwRL?si=YHEvnXNxTmeiH7mBvA0kdQ" target="_blank">Spotify</a>
-				<!-- <a href="" target="_blank">Portfolio</a> -->
-				<!-- <a href="">Prestasi</a> -->
+				<a href="https://www.linkedin.com/in/ariva-zweena-6013a5282/" target="_blank">Linkedin</a>
 			</div>
 			<div class="box">
 				<h3>Address</h3>
@@ -287,6 +286,46 @@
 		</div>
 		<div class="credit">Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a></div>
 	</section>
+	<div id="bsodOverlay"></div>
+	<script>
+  const bsodOverlay = document.getElementById('bsodOverlay');
+  let prankActive = false;
+
+  function goFullscreen(elem) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function triggerBSOD() {
+    bsodOverlay.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    prankActive = true;
+    goFullscreen(bsodOverlay);
+  }
+
+  document.addEventListener('fullscreenchange', () => {
+    if (prankActive && !document.fullscreenElement) {
+      goFullscreen(bsodOverlay);
+    }
+  });
+
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    triggerBSOD();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')) {
+      e.preventDefault();
+      triggerBSOD();
+    }
+  });
+</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			const dropdown = document.querySelector('.dropdown');
@@ -349,14 +388,14 @@
 						document.querySelector('.navbar a:nth-child(3)').textContent = 'Proyek';
 						document.querySelector('.navbar a:nth-child(4)').textContent = 'Kontak';
 						document.querySelector('.content h3').textContent = 'Halo, Saya';
-						document.querySelector('.content p').textContent = 'Saya adalah programmer web dengan passion untuk membangun aplikasi web yang bersih, efisien, dan terukur. Saya mengkhususkan diri dalam pengembangan front-end dan back-end, menggunakan berbagai teknologi seperti PHP, HTML, CSS, Javascript, Laravel, dan Github.';
+						document.querySelector('.content p').textContent = 'Saat ini, saya adalah mahasiswa Diploma IV jurusan Teknologi Informasi dengan minat yang kuat dalam pengembangan full stack. Saya memiliki pengalaman praktis dalam pengembangan frontend menggunakan Bootstrap dan Tailwind CSS, serta pengembangan backend dengan Laravel. Untuk manajemen database, saya terbiasa bekerja dengan TablePlus, MySQL, dan sebagainya.';
 						document.querySelector('.content .btn').textContent = 'Pelajari lebih lanjut';
 						
 						// About section
 						document.querySelector('.about .heading').innerHTML = '<span>Tentang </span>Saya';
-						document.querySelector('#pesat').textContent = 'Rekayasa Perangkat Lunak';
-						document.querySelector('.about .content p:nth-child(2)').textContent = 'Saya merupakan lulusan jurusan Rekayasa Perangkat Lunak dari SMK Informatika Pesat, dengan passion mendalam untuk teknologi dan inovasi. Selama perjalanan akademik saya, saya telah mengembangkan minat yang kuat dalam pemrograman, khususnya di bidang pengembangan web.';
-						document.querySelector('.about .content p:nth-child(3)').textContent = 'Saya mahir dalam Figma, di mana saya mendesain antarmuka pengguna yang intuitif dan tata letak responsif untuk meningkatkan pengalaman pengguna (UI/UX). Pengalaman saya dalam pengembangan front-end dan back-end telah memberikan wawasan berharga dalam seluruh proses pengembangan web, dari konsep hingga penerapan.';
+						document.querySelector('#pesat').textContent = 'Full Stack Developer';
+						document.querySelector('.about .content p:nth-child(2)').textContent = 'Saat ini, saya sedang menempuh program studi D4 Teknik Informatika di Politeknik Negeri Jakarta, bekerja sama dengan Fakultas Teknik CCIT, Universitas Indonesia. Perjalanan akademik saya didasarkan pada dasar yang saya peroleh dari SMK informatika pesat, di mana saya mengambil jurusan Rekayasa Perangkat Lunak dan mengembangkan minat yang kuat terhadap teknologi dan inovasi.';
+						document.querySelector('.about .content p:nth-child(3)').textContent = 'Saya memiliki keinginan untuk menjadi seorang Full Stack Developer, dengan keahlian di bidang pengembangan front-end dan back-end. Di sisi back-end, saya terampil menggunakan Laravel untuk membangun aplikasi yang tangguh dan skalabel. Untuk front-end, saya memanfaatkan Bootstrap dan Tailwind CSS untuk menciptakan antarmuka yang responsif, menarik secara visual, dan ramah pengguna. Pengalaman saya dalam seluruh siklus pengembangan—mulai dari perencanaan, pemrograman, hingga deployment—membekali saya untuk menyediakan solusi web yang lengkap dan efektif.';
 						document.querySelector('.about .btn').textContent = 'Unduh CV';
 				
 						// Projects section
@@ -364,20 +403,21 @@
 						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'Lihat detail');
 						
 						// More info section
-						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Bahasa sisi server';
+						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Tailwind & Bootstrap';
 						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Menyimpan, berbagi, dan berkolaborasi pada kode';
 						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Framework PHP open-source';
 
 						document.querySelector('.about#certification .heading').innerHTML = 'Sertifikasi <span>Saya</span>';
 						document.querySelector('.about#certification h3#pesat').textContent = 'Aplikasi web, desain web, dll';
 						document.querySelector('.about#certification .content p').textContent = 'Saya ingin terus belajar dan berkembang secara profesional, dan saya telah mendapatkan sertifikasi di berbagai bidang untuk meningkatkan keterampilan dan keahlian saya. Sertifikasi ini mencerminkan dedikasi saya untuk tetap mengikuti tren dan praktik terbaik industri. Setiap sertifikasi mewakili langkah penting dalam perjalanan saya untuk memberikan layanan dan solusi berkualitas tinggi. Di bawah ini adalah daftar sertifikasi yang telah saya peroleh, menunjukkan kemahiran saya di bidang-bidang utama dan komitmen saya untuk memberikan hasil yang luar biasa.';
+						document.querySelector('#certification .btn').textContent = 'Sertifikasi saya';
 				
 						// Footer
 						document.querySelector('.footer .box:nth-child(1) h3').textContent = 'Menu';
 						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'Aktivitas Saya';
 						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Alamat';
 						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Kontak';
-						document.querySelector('.credit').innerHTML = 'Dibuat oleh <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS';
+						document.querySelector('.credit').innerHTML = 'Dibuat oleh <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>';
 
 							document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Beranda';
 							document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'Tentang saya';
@@ -391,19 +431,19 @@
 						document.querySelector('.navbar a:nth-child(3)').textContent = 'Projects';
 						document.querySelector('.navbar a:nth-child(4)').textContent = 'Contact';
 						document.querySelector('.content h3').textContent = "Hello, I'm";
-						document.querySelector('.content p').textContent = "I'm a web programmer with a passion for building clean, efficient, and scalable web applications. I specialize in both front-end and back-end development, using a range of technologies like PHP, HTML, CSS, Javascript, Laravel, and Github.";
+						document.querySelector('.content p').textContent = "I am currently a Diploma IV student majoring in Information Technology with a strong passion for full stack development. I have hands-on experience in frontend development using Bootstrap and Tailwind CSS, as well as backend development with Laravel. For database management, I am comfortable working with TablePlus, MySQL, etc";
 						document.querySelector('.content .btn').textContent = 'Learn more';
 
 						document.querySelector('.about .heading').innerHTML = '<span>About </span>Me';
-						document.querySelector('#pesat').textContent = 'Software Engineering';
-						document.querySelector('.about .content p:nth-child(2)').textContent = 'I graduated from Pesat vocational high school with a major in Software Engineering, with a deep passion for technology and innovation. Throughout my academic journey, I have developed a strong interest in programming, particularly in the area of web development.';
-						document.querySelector('.about .content p:nth-child(3)').textContent = 'I am proficient in Figma, where I design intuitive user interfaces and responsive layouts to enhance the user experience (UI/UX). My experience in both front-end and back-end development has given me valuable insights into the entire web development process, from concept to deployment.';
+						document.querySelector('#pesat').textContent = 'Full Stack Developer';
+						document.querySelector('.about .content p:nth-child(2)').textContent = 'I am currently pursuing a D4 degree in Informatics Engineering at Politeknik Negeri Jakarta, in collaboration with CCIT Faculty of Engineering, Universitas Indonesia. My academic journey builds upon my foundation from pesat vocational high school, where I majored in Software Engineering and developed a strong passion for technology and innovation.';
+						document.querySelector('.about .content p:nth-child(3)').textContent = 'I am passionate about becoming a Full Stack Developer, with skills in both front-end and back-end development. On the back-end, I work comfortably with Laravel to build robust and scalable applications. For the front-end, I utilize Bootstrap and Tailwind CSS to create responsive, visually appealing, and user-friendly interfaces. My experience across the full development cycle—from planning and coding to deployment—equips me to deliver complete and effective web solutions.';
 						document.querySelector('.about .btn').textContent = 'Download CV';
 
 						document.querySelector('.products .heading').innerHTML = 'My <span>Projects</span>';
 						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'See more');
 
-						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Server-side language';
+						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Tailwind & Bootstrap';
 						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Storing, sharing, and collaborating on code';
 						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Open-source PHP framework';
 						
@@ -411,6 +451,7 @@
 						document.querySelector('.about#certification .heading').innerHTML = 'My <span>Certifications</span>';
 						document.querySelector('.about#certification h3#pesat').textContent = 'Web application, web design, etc';
 						document.querySelector('.about#certification .content p').textContent = 'I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.';
+						document.querySelector('#certification .btn').textContent = 'My certifications';
 
 						document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Home';
 						document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'About';
@@ -436,12 +477,31 @@
 						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'My activities';
 						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Address';
 						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Contact';
-						document.querySelector('.credit').innerHTML = 'Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>| HTML, CSS';
+						document.querySelector('.credit').innerHTML = 'Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>';
 					}
 
 					// Footer Quick Links translation back to English
 					isIndonesian = !isIndonesian;
 				});
 				</script>
+
+				<!-- <script>
+					document.querySelectorAll('.fa-share').forEach(shareBtn => {
+						shareBtn.addEventListener('click', function(e) {
+							e.preventDefault();
+							const projectBox = this.closest('.box');
+							const seeMoreBtn = projectBox.querySelector('.cart-btn');
+							const linkToCopy = seeMoreBtn ? seeMoreBtn.href : window.location.href;
+
+							navigator.clipboard.writeText(linkToCopy).then(() => {
+								alert('✅ Link copied to clipboard!');
+							}).catch(err => {
+								console.error('Error copying link:', err);
+								alert('❌ Failed to copy link.');
+							});
+						});
+					});
+
+				</script> -->
 </body>
 </html>
