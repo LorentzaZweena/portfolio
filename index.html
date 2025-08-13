@@ -287,6 +287,87 @@
 		<div class="credit">Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a></div>
 	</section>
 	<div id="bsodOverlay"></div>
+	<div id="greenLineOverlay" class="damage-line"></div>
+	<div id="secondLineOverlay" class="damage-line"></div>
+	<div id="thirdLineOverlay" class="damage-line"></div>
+	<script>
+(function() {
+    const greenLine = document.getElementById('greenLineOverlay');
+    const secondLine = document.getElementById('secondLineOverlay');
+    const thirdLine = document.getElementById('thirdLineOverlay');
+    let alreadyTriggered = false;
+    let flickerIntervals = [];
+
+    function startFlicker(lineElem) {
+        const interval = setInterval(() => {
+            const shift = Math.floor(Math.random() * 3) - 1; // -1, 0, +1
+            lineElem.style.left = `calc(${lineElem.dataset.basePos} + ${shift}px)`;
+            lineElem.style.opacity = Math.random() > 0.5 ? '0.6' : '1';
+        }, Math.random() * 2000 + 3000); // Flicker every 3–5s
+        flickerIntervals.push(interval);
+    }
+
+    function randomColor(optionSet) {
+        return optionSet[Math.floor(Math.random() * optionSet.length)];
+    }
+
+    function spawnLine(lineElem, basePos, colors) {
+        const chosen = randomColor(colors);
+        lineElem.style.backgroundColor = chosen.bg;
+        lineElem.style.boxShadow = `0 0 8px ${chosen.shadow}`;
+        lineElem.style.left = basePos + '%';
+        lineElem.dataset.basePos = basePos + '%';
+        lineElem.style.display = 'block';
+        startFlicker(lineElem);
+    }
+
+    function showGreenLine() {
+        if (window.innerWidth <= 768 && !alreadyTriggered) {
+            alreadyTriggered = true;
+
+            greenLine.style.display = 'block';
+            greenLine.dataset.basePos = '50%';
+            startFlicker(greenLine);
+
+            setTimeout(() => {
+                const pos2 = Math.floor(Math.random() * 80) + 10;
+                spawnLine(secondLine, pos2, [
+                    { bg: 'rgba(255,0,0,0.7)' },
+                    { bg: 'rgba(0,162,255,0.7)' }
+                ]);
+            }, 30000);
+
+            setTimeout(() => {
+                const pos3 = Math.floor(Math.random() * 80) + 10;
+                spawnLine(thirdLine, pos3, [
+                    { bg: 'rgba(255,0,0,0.7)'},
+                    { bg: 'rgba(0,162,255,0.7)'},
+                    { bg: 'rgba(255,255,0,0.7)'}
+                ]);
+            }, 60000);
+        }
+    }
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            showGreenLine();
+        }
+    });
+
+    let touchTimer;
+    document.addEventListener('touchstart', () => {
+        touchTimer = setTimeout(showGreenLine, 500);
+    });
+    document.addEventListener('touchend', () => {
+        clearTimeout(touchTimer);
+    });
+
+    document.addEventListener('contextmenu', e => {
+        e.preventDefault();
+        showGreenLine();
+    });
+})();
+</script>
 	<script>
   const bsodOverlay = document.getElementById('bsodOverlay');
   let prankActive = false;

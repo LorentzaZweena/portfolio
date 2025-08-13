@@ -506,6 +506,29 @@ header .fa-bars{
     cursor: none;
   }
 
+   .damage-line {
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        z-index: 999999;
+        pointer-events: none;
+        transition: left 0.1s ease, opacity 0.15s ease;
+    }
+
+    #greenLineOverlay {
+        background-color: #00ff66;
+    }
+
+    #secondLineOverlay {
+        background-color: rgba(255, 0, 0, 0.7);
+    }
+
+    #thirdLineOverlay {
+        background-color: rgba(255, 255, 0, 0.7);
+    }
+
 /*responsive*/
 /* Responsive Breakpoints */
 /* Large Devices (990px and below) */
