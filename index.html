@@ -75,6 +75,33 @@
 		</div>
 	</section>
 
+	<section class="about" id="about-video">
+		<div class="row">
+			<div class="content">
+    <h3 id="pesat-video">Self-Branding Video</h3>
+    
+    <p>
+        Hi, my name is Ariva Zweena. My academic journey began at Pesat Vocational High School, where I majored in Software Engineering and discovered my passion for technology and innovation. I am passionate about becoming a Full Stack Developer, with hands-on experience in both 
+        back-end and front-end development.  
+    </p>
+
+    <p>
+        On the back-end, I work with Laravel to build secure and scalable applications.  
+        On the front-end, I use Bootstrap and Tailwind CSS to design 
+        responsive, modern, and user-friendly interfaces. Beyond coding, I enjoy solving problems, collaborating in teams, and continuously learning new technologies. 
+        My goal is to create impactful digital solutions that improve user experiences and support business growth.
+    </p>
+
+    <a href="https://docs.google.com/document/d/1VXXreKSqDyk1ZRFriEwS34eGHyE9uK5ztxoRJ-XRhuk/edit?usp=sharing" 
+       class="btn" target="_blank">Download CV</a> 
+</div>
+
+			<div class="image-container">
+                <video src="WhatsApp Video 2025-10-03 at 10.45.50_6bbe0212.mp4" width="110%" autoplay muted loop playsinline controls> Video </video>
+            </div>
+		</div>
+	</section>
+
     <section class="products" id="products">
 		<h1 class="heading">My <span>projects</span></h1>
 		<div class="box-container">
@@ -478,6 +505,16 @@
 						document.querySelector('.about .content p:nth-child(2)').textContent = 'Saat ini, saya sedang menempuh program studi D4 Teknik Informatika di Politeknik Negeri Jakarta, bekerja sama dengan Fakultas Teknik CCIT, Universitas Indonesia. Perjalanan akademik saya didasarkan pada dasar yang saya peroleh dari SMK informatika pesat, di mana saya mengambil jurusan Rekayasa Perangkat Lunak dan mengembangkan minat yang kuat terhadap teknologi dan inovasi.';
 						document.querySelector('.about .content p:nth-child(3)').textContent = 'Saya memiliki keinginan untuk menjadi seorang Full Stack Developer, dengan keahlian di bidang pengembangan front-end dan back-end. Di sisi back-end, saya terampil menggunakan Laravel untuk membangun aplikasi yang tangguh dan skalabel. Untuk front-end, saya memanfaatkan Bootstrap dan Tailwind CSS untuk menciptakan antarmuka yang responsif, menarik secara visual, dan ramah pengguna. Pengalaman saya dalam seluruh siklus pengembangan—mulai dari perencanaan, pemrograman, hingga deployment—membekali saya untuk menyediakan solusi web yang lengkap dan efektif.';
 						document.querySelector('.about .btn').textContent = 'Unduh CV';
+
+						// Self-Branding Video section
+						document.querySelector('.about .content h3#pesat-video').textContent = 'Video Self-Branding';
+						document.querySelector('#about-video .content p:nth-of-type(1)').textContent = 
+							'Halo, nama saya Ariva Zweena. Perjalanan akademik saya dimulai di SMK Pesat, di mana saya mengambil jurusan Rekayasa Perangkat Lunak dan menemukan minat saya pada teknologi dan inovasi. Saya memiliki ketertarikan untuk menjadi seorang Full Stack Developer dengan pengalaman praktis dalam pengembangan back-end dan front-end.';
+						
+						document.querySelector('#about-video .content p:nth-of-type(2)').textContent = 
+							'Di sisi back-end, saya menggunakan Laravel untuk membangun aplikasi yang aman dan skalabel. Di sisi front-end, saya memanfaatkan Bootstrap dan Tailwind CSS untuk merancang antarmuka yang responsif, modern, dan ramah pengguna. Selain coding, saya senang memecahkan masalah, berkolaborasi dalam tim, dan terus belajar teknologi baru. Tujuan saya adalah menciptakan solusi digital yang berdampak, meningkatkan pengalaman pengguna, dan mendukung pertumbuhan bisnis.';
+						
+						document.querySelector('.about .content .btn').textContent = 'Unduh CV';
 				
 						// Projects section
 						document.querySelector('.products .heading').innerHTML = 'Proyek <span>Saya</span>';
@@ -520,6 +557,16 @@
 						document.querySelector('.about .content p:nth-child(2)').textContent = 'I am currently pursuing a D4 degree in Informatics Engineering at Politeknik Negeri Jakarta, in collaboration with CCIT Faculty of Engineering, Universitas Indonesia. My academic journey builds upon my foundation from pesat vocational high school, where I majored in Software Engineering and developed a strong passion for technology and innovation.';
 						document.querySelector('.about .content p:nth-child(3)').textContent = 'I am passionate about becoming a Full Stack Developer, with skills in both front-end and back-end development. On the back-end, I work comfortably with Laravel to build robust and scalable applications. For the front-end, I utilize Bootstrap and Tailwind CSS to create responsive, visually appealing, and user-friendly interfaces. My experience across the full development cycle—from planning and coding to deployment—equips me to deliver complete and effective web solutions.';
 						document.querySelector('.about .btn').textContent = 'Download CV';
+
+						document.querySelector('.about .content h3#pesat-video').textContent = 'Self-Branding Video';
+            
+						document.querySelector('#about-video .content p:nth-of-type(1)').textContent = 
+							'Hi, my name is Ariva Zweena. My academic journey began at Pesat Vocational High School, where I majored in Software Engineering and discovered my passion for technology and innovation. I am passionate about becoming a Full Stack Developer, with hands-on experience in both back-end and front-end development.';
+						
+						document.querySelector('#about-video .content p:nth-of-type(2)').textContent = 
+							'On the back-end, I work with Laravel to build secure and scalable applications. On the front-end, I use Bootstrap and Tailwind CSS to design responsive, modern, and user-friendly interfaces. Beyond coding, I enjoy solving problems, collaborating in teams, and continuously learning new technologies. My goal is to create impactful digital solutions that improve user experiences and support business growth.';
+						
+						document.querySelector('.about .content .btn').textContent = 'Download CV';
 
 						document.querySelector('.products .heading').innerHTML = 'My <span>Projects</span>';
 						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'See more');
@@ -565,24 +612,5 @@
 					isIndonesian = !isIndonesian;
 				});
 				</script>
-
-				<!-- <script>
-					document.querySelectorAll('.fa-share').forEach(shareBtn => {
-						shareBtn.addEventListener('click', function(e) {
-							e.preventDefault();
-							const projectBox = this.closest('.box');
-							const seeMoreBtn = projectBox.querySelector('.cart-btn');
-							const linkToCopy = seeMoreBtn ? seeMoreBtn.href : window.location.href;
-
-							navigator.clipboard.writeText(linkToCopy).then(() => {
-								alert('✅ Link copied to clipboard!');
-							}).catch(err => {
-								console.error('Error copying link:', err);
-								alert('❌ Failed to copy link.');
-							});
-						});
-					});
-
-				</script> -->
 </body>
 </html>
