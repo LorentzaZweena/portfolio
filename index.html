@@ -262,6 +262,18 @@
 				<div class="mySlides fade">
 					<img src="./img/sertikom6.png">
 				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/imagecopy.png">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/imagecopy2.png">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/imagecopy3.png">
+				</div>
 				
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
 				<a class="next" onclick="plusSlides(1)">❯</a>
@@ -315,7 +327,6 @@
 			<div class="box">
 				<h3>My activities</h3>
 				<a href="https://github.com/users/LorentzaZweena/projects/3" target="_blank">Github</a>
-				<a href="https://open.spotify.com/playlist/3PYYvJZdzm7MhppMzIUwRL?si=YHEvnXNxTmeiH7mBvA0kdQ" target="_blank">Spotify</a>
 				<a href="https://www.linkedin.com/in/ariva-z-6013a5282/" target="_blank">Linkedin</a>
 			</div>
 			<div class="box">
@@ -347,10 +358,10 @@
 
     function startFlicker(lineElem) {
         const interval = setInterval(() => {
-            const shift = Math.floor(Math.random() * 3) - 1; // -1, 0, +1
+            const shift = Math.floor(Math.random() * 3) - 1;
             lineElem.style.left = `calc(${lineElem.dataset.basePos} + ${shift}px)`;
             lineElem.style.opacity = Math.random() > 0.5 ? '0.6' : '1';
-        }, Math.random() * 2000 + 3000); // Flicker every 3–5s
+        }, Math.random() * 2000 + 3000);
         flickerIntervals.push(interval);
     }
 
