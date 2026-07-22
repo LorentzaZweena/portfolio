@@ -1,651 +1,577 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" class="scroll-smooth">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portofolio web</title>
-
-	<!-- font -->
-	<link rel="stylesheet" type="text/css" href="https://
-	cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<!-- icon -->
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="icon" type="image/x-icon" href="https://www.pngmart.com/files/14/Z-Letter-Transparent-PNG.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariva Zweena - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-	<!-- navbar -->
-	<header>
-		<input type="checkbox" name="" id="toggler">
-		<label for="toggler" class="fas fa-bars"></label>
-		<a href="" class="logo">Zweena</a>
-		<nav class="navbar">
-			<a href="#home">Home</a>
-			<a href="#about">About</a> 
-			<a href="#products">Projects</a> 
-			<a href="#contact">Contact</a>
-		</nav>
-		<div class="icons">
-			<a href="https://github.com/LorentzaZweena" target="_blank"><i class='bx bxl-github' style="font-size: 2em;"></i></a>
-		</div>
-	</header>
-
-	<!-- home -->
-	<section class="home" id="home">
-			<div class="content">
-				<h3>Hello, I'm</h3>
-				<span>Ariva Zweena</span>
-				<p>Diploma IV Information Technology student with interests in Full Stack Development and Data Analysis. Experienced in frontend development using Bootstrap and Tailwind CSS, backend development with Laravel, and database management with MySQL using tools like TablePlus. <br><br>In addition to web development, I have developed skills in data analysis through a data analyst bootcamp, where I worked with Excel and SQL to process, analyze, and interpret data to generate meaningful insights. This experience is supported by a recommendation letter from the program.</p>
-				<a href="#about" class="btn">Learn more</a>
-			</div>
-
-			<div class="gambar">
-				<img src="./img/WhatsApp_Image_2025-08-11_at_15.44.24_e2ee7d7b-removebg-preview-removebg-preview.png">
-			</div>
-	</section>
-
-	<div style="margin-top: -8em;"></div>
-	<!-- about -->
-	<section class="about" id="about">
-		<h1 class="heading"><span>About </span>Me</h1>
-		<div class="row">
-			<div class="image-container">
-                <img src="./img/WhatsApp_Image 2024-11-22 at 09.38.33.png">
+<body class="bg-theme-bg text-theme-light font-sans antialiased selection:bg-theme-accent selection:text-theme-bg">
+    <nav class="fixed top-0 w-full z-50 bg-theme-bg/90 backdrop-blur-md border-b border-theme-card shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-widest text-theme-light flex items-center gap-2 hover:text-theme-accent transition">
+                <span class="text-theme-accent font-black">&lt;/&gt;</span> ARIVA
+            </a>
+            
+            <div class="hidden md:flex items-center gap-6 font-semibold text-xs tracking-wider text-theme-light/70">
+                <a href="#home" class="hover:text-theme-accent transition">HOME</a>
+                <a href="#about" class="hover:text-theme-accent transition">ABOUT</a>
+                <a href="#education" class="hover:text-theme-accent transition">EDUCATION</a>
+                <a href="#organization" class="hover:text-theme-accent transition">ORGANIZATION</a>
+                <a href="#certificates" class="hover:text-theme-accent transition">CERTIFICATES</a>
+                <a href="#projects" class="hover:text-theme-accent transition">PROJECTS</a>
+                <a href="#skills" class="hover:text-theme-accent transition">SKILLS</a>
             </div>
+
+            <a href="#contact" class="bg-theme-accent hover:bg-opacity-80 text-theme-bg text-xs font-bold px-6 py-2.5 rounded-full transition shadow-lg shadow-theme-accent/20">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen pt-28 pb-16 flex items-center relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7 space-y-6">
+                <p class="text-theme-accent text-sm font-bold tracking-widest uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-terminal"></i> Ariva Zweena
+                </p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-theme-light leading-tight">
+                    Hi, I'm ARIVA<br>
+                    <span class="text-theme-accent">I'm a Web Developer <span class="animate-pulse">_</span></span>
+                </h1>
+                <p class="text-theme-light/80 text-sm leading-relaxed max-w-xl">
+                    Informatics Engineering student specializing in Full-Stack Web Development using Laravel and MySQL. Experienced in building real-world web applications with authentication, dashboards, and APIs.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-4 pt-3">
+                    <a href="#" target="_blank" class="bg-theme-card hover:bg-theme-card/80 border border-theme-accent/50 text-theme-light px-6 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition hover:shadow-lg hover:shadow-theme-accent/20">
+                        <i class="fa-solid fa-download"></i> View Portfolio App
+                    </a>
+                    <div class="flex items-center gap-3">
+                        <a href="https://github.com/LorentzaZweena" target="_blank" class="w-10 h-10 rounded-full bg-theme-card hover:bg-theme-accent hover:text-theme-bg border border-transparent hover:border-theme-accent text-theme-light flex items-center justify-center transition text-sm">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ariva-z-6013a5282" target="_blank" class="w-10 h-10 rounded-full bg-theme-card hover:bg-theme-accent hover:text-theme-bg border border-transparent hover:border-theme-accent text-theme-light flex items-center justify-center transition text-sm">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:ariva02zweena@gmail.com" class="w-10 h-10 rounded-full bg-theme-card hover:bg-theme-accent hover:text-theme-bg border border-transparent hover:border-theme-accent text-theme-light flex items-center justify-center transition text-sm">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden border-2 border-theme-accent/50 cyan-glow">
+                    <img src="./img/IMG20260529071931.jpg" alt="Ariva Zweena" class="w-full h-full object-cover object-top grayscale-[20%] hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECH BANNER -->
+    <div class="bg-theme-card border-y border-theme-card/80 py-5">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-around items-center gap-6 text-theme-light/50 hover:text-theme-accent text-xs font-bold tracking-wider transition-all duration-300">
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-brands fa-laravel text-sm"></i> LARAVEL</span>
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-brands fa-php text-sm"></i> PHP</span>
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-solid fa-database text-sm"></i> SQlite</span>
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-brands fa-js text-sm"></i> JAVASCRIPT</span>
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-brands fa-bootstrap text-sm"></i> BOOTSTRAP</span>
+            <span class="hover:text-theme-accent transition cursor-default"><i class="fa-solid fa-cloud text-sm"></i> REST API</span>
+        </div>
+    </div>
+
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <span class="text-theme-accent text-xs font-bold tracking-widest uppercase">GET TO KNOW ME</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mt-2 mb-8">About Me.</h2>
             
-			<div class="content">
-				<h3 id="pesat">Informatics Engineering Student</h3>
-				<p>
-					I am currently pursuing a D4 degree in Informatics Engineering at Politeknik Negeri Jakarta in collaboration with CCIT Faculty of Engineering, Universitas Indonesia. I previously graduated from Pesat Vocational High School, majoring in Software Engineering, where I developed a strong interest in technology and software development.
-				</p>
-				<p>
-					I am passionate about becoming a Full Stack Developer with experience in both front-end and back-end development. I work with Laravel for back-end development and use Bootstrap and Tailwind CSS to build responsive and user-friendly interfaces. I also completed a Data Analyst bootcamp, which strengthened my analytical thinking and data processing skills, and I received a recommendation letter for my performance during the program.
-				</p>
+            <p class="max-w-2xl mx-auto text-theme-light/80 text-sm leading-relaxed mb-12">
+                I am a passionate Full-Stack Developer with hands-on experience in developing secure web portals, voting systems, and RESTful API backends. I love turning complex logic into smooth, user-friendly digital solutions.
+            </p>
 
-				<a href="https://docs.google.com/document/d/1HFZxCuIpRQfqpgnCIg__iEr_vbT5DVKF4KP0dABiqXc/edit?usp=sharing" class="btn" target="_blank">Download CV</a> 
-			</div>
-		</div>
-	</section>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent/50 transition p-6 rounded-xl">
+                    <h3 class="text-2xl font-black text-theme-light">BNSP</h3>
+                    <p class="text-xs text-theme-accent mt-1 font-semibold">Certified Web Dev</p>
+                </div>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent/50 transition p-6 rounded-xl">
+                    <h3 class="text-2xl font-black text-theme-light">4+</h3>
+                    <p class="text-xs text-theme-accent mt-1 font-semibold">Major Projects</p>
+                </div>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent/50 transition p-6 rounded-xl">
+					<h3 class="text-2xl font-black text-theme-light">Laravel</h3>
+					<p class="text-xs text-theme-accent mt-1 font-semibold">Core Backend Tech</p>
+				</div>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent/50 transition p-6 rounded-xl">
+                    <h3 class="text-2xl font-black text-theme-light">50+</h3>
+                    <p class="text-xs text-theme-accent mt-1 font-semibold">Repositories</p>
+                </div>
+            </div>
 
-	<div style="margin-top: -8em;"></div>
-    <section class="products" id="products">
-		<h1 class="heading">My <span>projects</span></h1>
-		<div class="box-container">
-			<div class="box" id="img">
-				<!-- <span class="discount">-10%</span> -->
-				<div class="image" id="img">
-					<img src="./img/satu.PNG">
-					<div class="icons">
-						<a href="https://github.com/LorentzaZweena/Lorentza-Project/tree/master/webdesignprojects/WellEat" class="fa-brands fa-github" target="_blank"></a>
-						<a href="https://welleat.vercel.app/" class="cart-btn" target="_blank">See more</a>
-						<a href="https://getbootstrap.com/" class="fa-brands fa-bootstrap"></a>
-					</div>
-				</div>
-				<div class="content">
-					<h3>WellEat</h3>
-					<div class="price">
-						Web design
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-			<div class="box">
-				<!-- <span class="discount">-15%</span> -->
-				<div class="image">
-					<img src="./img/image.png">
-					<div class="icons">
-						<a href="https://github.com/LorentzaZweena/blog-guardian-of-galaxy" class="fa-brands fa-github" target="_blank"></a>
-						<a href="https://blog-guardian-of-galaxy.vercel.app/" class="cart-btn" target="_blank">See more</a>
-						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="fa-brands fa-css3"></a>
-					</div>
-				</div>
-				<div class="content">
-					<h3>Blog </h3>
-					<div class="price">
-						Web design
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-			<div class="box">
-				<!-- <span class="discount">-5%</span> -->
-				<div class="image">
-					<img src="./img/lima.PNG">
-					<div class="icons">
-						<a href="https://github.com/LorentzaZweena/resumeBuilder.git" class="fa-brands fa-github"></a>
-						<a href="" class="cart-btn">See more</a>
-						<a href="https://www.php.net/" class="fa fa-brands fa-php"></a>
-					</div> 
-				</div>
-				<div class="content">
-					<h3>Resume builder</h3>
-					<div class="price">
-						Web application
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-			<div class="box">
-				<!-- <span class="discount">-5%</span> -->
-				<div class="image">
-					<img src="./img/image2.png" style="width: 90%;">
-					<div class="icons">
-						<a href="https://github.com/LorentzaZweena/jobPortal.git" target="_blank" class="fa-brands fa-github"></a>
-						<a href="" class="cart-btn">See more</a>
-						<a href="https://laravel.com/" class="fa fa-brands fa-laravel"></a>
-					</div>
-				</div>
-				<div class="content">
-					<h3>WorkNest</h3>
-					<div class="price">
-						Web application
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box-container">
-			<div class="box" id="img">
-				<!-- <span class="discount">Data analyst</span> -->
-				<div class="image" id="img">
-					<img src="./img/Screenshot_20260124_142050_com.microsoft.emmx.jpg">
-					<div class="icons">
-						<a href="https://lookerstudio.google.com/" class="bx bxs-pie-chart-alt-2" target="_blank"></a>
-						<a href="https://lookerstudio.google.com/reporting/e5596d9c-bd1e-47e3-9274-27bb75057189" class="cart-btn" target="_blank">See more</a>
-						<a href="https://www.canva.com/design/DAG_eyf4zaY/p4DWQBooy0aU-INTi_PLag/edit?utm_content=DAG_eyf4zaY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="bx bxs-slideshow"></a>
-					</div>
-				</div>
-				<div class="content">
-					<h3>Dashboard with Looker Studio</h3>
-					<div class="price">
-						Data analyst
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-			<div class="box">
-				<!-- <span class="discount">-15%</span> -->
-				<div class="image">
-					<img src="./img/Screenshot_20260120_120402_com.microsoft.emmx.jpg">
-					<div class="icons">
-						<a href="https://docs.google.com/spreadsheets/" class="bx bxs-bar-chart-alt-2" target="_blank"></a>
-						<a href="https://docs.google.com/spreadsheets/d/16N96AU181oGW0oNXByCw4yN2KyHNSFl0FvO_PBh_Dr0/edit?usp=sharing" class="cart-btn" target="_blank">See more</a>
-						<a href="https://www.canva.com/design/DAG_eyf4zaY/p4DWQBooy0aU-INTi_PLag/edit?utm_content=DAG_eyf4zaY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="bx bxs-slideshow"></a>
-					</div>
-				</div>
-				<div class="content">
-					<h3>Pivot table </h3>
-					<div class="price">
-						Data analyst
-						<!-- <span>$15.99</span> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto text-left">
+                <div class="bg-theme-card/50 border border-theme-card p-6 rounded-xl">
+                    <h4 class="text-sm font-bold text-theme-light mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb text-theme-accent"></i> My Philosophy</h4>
+                    <p class="text-xs text-theme-light/70 leading-relaxed">
+                        Combining efficient back-end architecture with modern front-end styling to build high-performance, robust web applications.
+                    </p>
+                </div>
+                <div class="bg-theme-card/50 border border-theme-card p-6 rounded-xl">
+                    <h4 class="text-sm font-bold text-theme-light mb-2 flex items-center gap-2"><i class="fa-solid fa-rocket text-theme-accent"></i> The Mission</h4>
+                    <p class="text-xs text-theme-light/70 leading-relaxed">
+                        Continuous learning in emerging tech like AI and Data Analytics while delivering clean, pixel-perfect code that solves real problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- more info -->
-	<section class="icons-container">
-		<div class="icons">
-			<i class="fa-solid fa-database"></i>
-			<div class="info">
-				<h3>Database</h3>
-				<span>Tableplus, MySQL, etc</span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class="fa-brands fa-bootstrap"></i>
-			<div class="info">
-				<h3>Frameworks</h3>
-				<span>Tailwind & Bootstrap</span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class='bx bxl-github'></i>
-			<div class="info">
-				<h3>Github</h3>
-				<span>Store, share, and collaborate on code </span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class="fa-brands fa-laravel"></i>
-			<div class="info">
-				<h3>Laravel</h3>
-				<span>Open-source PHP web framework</span>
-			</div>
-		</div>
-	</section>
+    <section id="education" class="py-16 bg-theme-card/30 border-t border-theme-card">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mb-2">Education & Experience</h2>
+            <p class="text-xs text-theme-accent font-semibold mb-10">My academic & professional journey</p>
 
+            <div class="space-y-6 text-left relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-theme-card before:to-transparent">
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-theme-bg bg-theme-accent text-theme-bg shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-graduation-cap text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-theme-card p-6 rounded-xl border border-theme-card shadow-lg hover:border-theme-accent/50 transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-theme-light text-base">Politeknik Negeri Jakarta × CCIT FTUI</h3>
+                            <span class="text-[10px] font-bold text-theme-accent bg-theme-bg px-2 py-1 rounded">2025 - Present</span>
+                        </div>
+                        <p class="text-xs font-semibold text-theme-light/90 mb-2">Bachelor of Applied Science in Informatics Engineering</p>
+                        <p class="text-xs text-theme-light/70 leading-relaxed">
+                            Collaborative program focusing on Full-Stack Web Development (Laravel, Tailwind CSS, MySQL, MongoDB) and AI workshops.
+                        </p>
+                    </div>
+                </div>
 
-	<section class="about" id="certification">
-		<h1 class="heading">My <span>certifications</span></h1>
-		<div class="row">
-			<div class="content">
-				<h3 id="pesat">Web application, Data analyst, etc</h3>
-				<p> I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.</p>
-				<a href="https://drive.google.com/drive/folders/1FKrswCoKeFc6fJAsAJyFy2qLPUgxGR4u" class="btn" target="_blank">My certifications</a>
-			</div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-theme-bg bg-theme-card text-theme-accent shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-laptop-code text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-theme-card p-6 rounded-xl border border-theme-card shadow-lg hover:border-theme-accent/50 transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-theme-light text-base">SMK Informatika PESAT</h3>
+                            <span class="text-[10px] font-bold text-theme-accent bg-theme-bg px-2 py-1 rounded">Aug - Nov 2024</span>
+                        </div>
+                        <p class="text-xs font-semibold text-theme-light/90 mb-2">Web Developer Intern</p>
+                        <p class="text-xs text-theme-light/70 leading-relaxed">
+                            Developed multiple web apps using PHP and MySQL including OSIS Voting System and School Portals with RBAC authentication.
+                        </p>
+                    </div>
+                </div>
 
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="./img/sertikom1.PNG">
-				</div>
-				
-				<div class="mySlides fade">
-					<img src="./img/sertikom2.PNG">
-				</div>
-				
-				<div class="mySlides fade">
-					<img src="./img/sertikom3.PNG">
-				</div>
+            </div>
+        </div>
+    </section>
 
-				<div class="mySlides fade">
-					<img src="./img/sertikom4.PNG">
-				</div>
+    <section id="organization" class="py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mb-2">Organization & Activities</h2>
+            <p class="text-xs text-theme-accent font-semibold mb-10">Leadership, volunteering & creative endeavors</p>
 
-				<div class="mySlides fade">
-					<img src="./img/IMG20250718202446.jpg">
-				</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card hover:border-theme-accent/50 transition duration-300 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-[10px] font-bold text-theme-accent bg-theme-bg px-2.5 py-1 rounded-full uppercase tracking-wider">Leadership</span>
+                                <h3 class="text-lg font-bold text-theme-light mt-2">Novo Club Batch 4</h3>
+                                <p class="text-xs text-theme-accent font-medium">ParagonCorp</p>
+                            </div>
+                            <span class="text-xs font-semibold text-theme-light/50 bg-theme-bg px-2.5 py-1 rounded">2026 - Present</span>
+                        </div>
+                        <ul class="text-xs text-theme-light/70 space-y-2 mt-4 list-disc list-inside leading-relaxed">
+                            <li>Selected participant in Novo Club Batch 4 leadership development program.</li>
+                            <li>Developing personal branding project through The Creator Studio focusing on digital storytelling.</li>
+                            <li>Strengthening communication, teamwork, and project execution skills.</li>
+                        </ul>
+                    </div>
+                </div>
 
-				<div class="mySlides fade">
-					<img src="./img/sertikom5.png">
-				</div>
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card hover:border-theme-accent/50 transition duration-300 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-[10px] font-bold text-theme-accent bg-theme-bg px-2.5 py-1 rounded-full uppercase tracking-wider">Volunteering</span>
+                                <h3 class="text-lg font-bold text-theme-light mt-2">Youth Ranger Indonesia</h3>
+                                <p class="text-xs text-theme-accent font-medium">TRACE FEST 2026</p>
+                            </div>
+                            <span class="text-xs font-semibold text-theme-light/50 bg-theme-bg px-2.5 py-1 rounded">July 2026 - Present</span>
+                        </div>
+                        <ul class="text-xs text-theme-light/70 space-y-2 mt-4 list-disc list-inside leading-relaxed">
+                            <li>Documented Urban Eco Journey pre-event activities with photo & video coverage.</li>
+                            <li>Produced recap videos for Green Forest Webinar and managed digital media assets.</li>
+                            <li>Collaborated with Social Media team for environmental awareness campaigns.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="mySlides fade">
-					<img src="./img/sertikom6.png">
-				</div>
+    <section id="certificates" class="py-16 bg-theme-card/30 border-y border-theme-card">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mb-2">Certificates</h2>
+            <p class="text-xs text-theme-accent font-semibold mb-10">Professional achievements & verified credentials</p>
 
-				<div class="mySlides fade">
-					<img src="./img/sertikom7.png">
-				</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/IMG20250718202446.jpg" alt="BNSP Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2025
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">Junior Web Developer</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">Issued by BNSP</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">National Certificate</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Web Dev</span>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="mySlides fade">
-					<img src="./img/imagecopy.png">
-				</div>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/sertikom1.PNG" alt="PT DKN Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2024
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">Web Application</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">PT Dimensi Kreasi Nusantara</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">PHP</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">MySQL</span>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="mySlides fade">
-					<img src="./img/imagecopy2.png">
-				</div>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/sertikom3.PNG" alt="C++" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2026
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">C++ Programming</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">WAN Teknologi</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Programming</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">C++</span>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="mySlides fade">
-					<img src="./img/imagecopy3.png">
-				</div>
-				
-				<a class="prev" onclick="plusSlides(-1)">❮</a>
-				<a class="next" onclick="plusSlides(1)">❯</a>
-			</div>
-			
-				<br>
-		</div>
-	</section>
+            </div>
+        </div>
+		<div class="max-w-6xl mx-auto px-6 text-center">
+			<br>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/image3.png" alt="Dicoding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2026
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">JavaScript Programming Basics</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">Issued by Dicoding</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Javascript</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Web Development</span>
+                        </div>
+                    </div>
+                </div>
 
-	<section class="icons-container" id="contact">
-		<div class="icons">
-			<i class='bx bxl-instagram'></i>
-			<div class="info">
-				<h3>Instagram</h3>
-				<span>ar07zwn</span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class='bx bxl-github'></i>
-			<div class="info">
-				<h3>Github</h3>
-				<span>LorentzaZweena</span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class='bx bxl-linkedin'></i>
-			<div class="info">
-				<h3>Linkedin</h3>
-				<span>Ariva Zweena</span>
-			</div>
-		</div>
-		<div class="icons">
-			<i class='bx bxl-gmail'></i>
-			<div class="info">
-				<h3>Email</h3>
-				<span>ariva02zweena@gmail.com</span>
-			</div>
-		</div>
-	</section>
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/sertikom7.PNG" alt="PT DKN Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2026
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">Learn the basics of web programming</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">Issued by Dicoding</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Web programming</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">HTML, CSS</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300">
+                    <div class="h-44 bg-theme-bg relative overflow-hidden flex items-center justify-center">
+                        <img src="./img/image4.png" alt="C++" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-theme-bg/80 backdrop-blur-md text-theme-accent text-[10px] font-bold px-2.5 py-1 rounded-full border border-theme-accent/30">
+                            2026
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-base font-bold text-theme-light mb-1">Learning Front-End Web Development for Beginners</h3>
+                        <p class="text-xs text-theme-accent mb-3 font-medium">Issued by Dicoding</p>
+                        <div class="flex flex-wrap gap-1.5 pt-2 border-t border-theme-bg/60">
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">Front-End</span>
+                            <span class="bg-theme-bg text-theme-light/80 text-[10px] px-2.5 py-1 rounded-md">HTML, CSS, JS</span>
+                        </div>
+                    </div>
+                </div>
 
-	<section class="footer">
-		<div class="box-container">
-			<div class="box">
-				<h3>Quick links</h3>
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#products">Projects</a>
-				<a href="#contact">Contact</a>
-			</div>
-			<div class="box">
-				<h3>My activities</h3>
-				<a href="https://github.com/users/LorentzaZweena/projects/3" target="_blank">Github</a>
-				<a href="https://www.linkedin.com/in/ariva-z-6013a5282/" target="_blank">Linkedin</a>
-			</div>
-			<div class="box">
-				<h3>Address</h3>
-				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Jalan komplek PWI</a>
-				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Cilebut barat, Bogor</a>
-				<a href="https://maps.app.goo.gl/ii8DJXQLtUt7iVwf7" target="_blank">Sukaraja</a>
-			</div>
-			<div class="box">
-				<h3>Contact</h3>
-				<a href="https://www.instagram.com/ar07zwn/?igsh=MTFmeHdtMGZ6Y3kzbQ%3D%3D" target="_blank">Instagram</a>
-				<a href="">Email</a>
-				<a href="https://www.tiktok.com/@vespera432?_r=1&_t=ZS-93gsjPr7R5w" target="_blank">Tiktok</a>
-			</div>
-		</div>
-		<div class="credit">Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a></div>
-	</section>
-	<div id="bsodOverlay"></div>
-	<div id="greenLineOverlay" class="damage-line"></div>
-	<div id="secondLineOverlay" class="damage-line"></div>
-	<div id="thirdLineOverlay" class="damage-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mb-2">Projects</h2>
+            <p class="text-xs text-theme-accent font-semibold mb-10">My latest work & web applications</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-theme-light mb-2">Arctic Travels</h3>
+                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                            Luxury winter resort booking platform with PHP Carbon financial logic and Laravel Sanctum token API.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Laravel</span>
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">REST API</span>
+                    </div>
+                </div>
+
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-theme-light mb-2">WorkNest</h3>
+                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                            Job portal web app with role management, custom filters, and Mailtrap API integration for emails.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Laravel</span>
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Mailtrap API</span>
+                    </div>
+                </div>
+
+                <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-check-to-slot"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-theme-light mb-2">OSIS Voting System</h3>
+                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                            Online voting system using PHP & MySQL with user authentication, handling 100+ active voters.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">PHP</span>
+                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-theme-card/30 border-t border-theme-card">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-theme-light mb-2">My Skills</h2>
+            <p class="text-xs text-theme-accent font-semibold mb-10">Technologies, tools, and frameworks I work with</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card/80 hover:border-theme-accent/50 transition duration-300 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4 text-theme-accent">
+                        <div class="w-10 h-10 rounded-xl bg-theme-bg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-theme-light">Back-End Dev</h3>
+                    </div>
+                    <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                        Server-side logic, authentication systems, CRUD operations, and API integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-laravel text-theme-accent"></i> Laravel
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-php text-theme-accent"></i> PHP
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-solid fa-network-wired text-theme-accent"></i> REST API
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-python text-theme-accent"></i> Python
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card/80 hover:border-theme-accent/50 transition duration-300 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4 text-theme-accent">
+                        <div class="w-10 h-10 rounded-xl bg-theme-bg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-theme-light">Front-End Dev</h3>
+                    </div>
+                    <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                        Building modern, responsive, and interactive user interfaces.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-html5 text-theme-accent"></i> HTML5
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-css3-alt text-theme-accent"></i> CSS3
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-js text-theme-accent"></i> JavaScript
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-bootstrap text-theme-accent"></i> Bootstrap
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-solid fa-wind text-theme-accent"></i> Tailwind
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card/80 hover:border-theme-accent/50 transition duration-300 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4 text-theme-accent">
+                        <div class="w-10 h-10 rounded-xl bg-theme-bg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-theme-light">Database & Tools</h3>
+                    </div>
+                    <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                        Database management, version control, and dev environments.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-solid fa-database text-theme-accent"></i> MySQL
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-solid fa-hard-drive text-theme-accent"></i> SQLite
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-solid fa-leaf text-theme-accent"></i> MongoDB
+                        </span>
+                        <span class="bg-theme-bg text-theme-light text-xs font-medium px-3 py-1.5 rounded-lg border border-theme-card/50 flex items-center gap-1.5">
+                            <i class="fa-brands fa-git-alt text-theme-accent"></i> Git
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-theme-bg relative border-t border-theme-card">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="text-theme-accent text-xs font-bold tracking-widest uppercase bg-theme-card px-4 py-1.5 rounded-full border border-theme-accent/30 inline-block mb-3">
+                LET'S CONNECT
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-theme-light mb-4">Have a project or internship offer?</h2>
+            <p class="text-xs md:text-sm text-theme-light/70 max-w-xl mx-auto mb-12 leading-relaxed">
+                I am actively seeking internship opportunities as a Full-Stack Web Developer. Feel free to reach out directly via WhatsApp, email, or social profiles!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <a href="mailto:ariva02zweena@gmail.com" class="bg-theme-card p-6 rounded-2xl border border-theme-card hover:border-theme-accent transition-all duration-300 shadow-lg group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-theme-bg flex items-center justify-center text-theme-accent text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-theme-light mb-1">Email Me</h3>
+                        <p class="text-xs text-theme-light/60 break-all">ariva02zweena@gmail.com</p>
+                    </div>
+                    <span class="text-xs font-bold text-theme-accent flex items-center gap-1.5 mt-6 group-hover:translate-x-1 transition">
+                        Send Email <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <a href="https://wa.me/6289526303760" target="_blank" class="bg-theme-card p-6 rounded-2xl border border-theme-card hover:border-theme-accent transition-all duration-300 shadow-lg group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-theme-bg flex items-center justify-center text-theme-accent text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-theme-light mb-1">WhatsApp</h3>
+                        <p class="text-xs text-theme-light/60">+62 895-2630-3760</p>
+                    </div>
+                    <span class="text-xs font-bold text-theme-accent flex items-center gap-1.5 mt-6 group-hover:translate-x-1 transition">
+                        Chat directly <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ariva-z-6013a5282" target="_blank" class="bg-theme-card p-6 rounded-2xl border border-theme-card hover:border-theme-accent transition-all duration-300 shadow-lg group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-theme-bg flex items-center justify-center text-theme-accent text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-theme-light mb-1">LinkedIn</h3>
+                        <p class="text-xs text-theme-light/60">Ariva Zweena</p>
+                    </div>
+                    <span class="text-xs font-bold text-theme-accent flex items-center gap-1.5 mt-6 group-hover:translate-x-1 transition">
+                        Visit Profile <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <div class="bg-theme-card p-6 rounded-2xl border border-theme-card shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-theme-bg flex items-center justify-center text-theme-accent text-xl mb-4">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-theme-light mb-1">Location</h3>
+                        <p class="text-xs text-theme-light/60">Bogor, Indonesia</p>
+                    </div>
+                    <span class="text-[10px] font-bold text-theme-accent bg-theme-bg px-2.5 py-1 rounded-full w-max mt-6 border border-theme-card">
+                        Open for Remote & freelance
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="py-6 text-center text-xs font-medium text-theme-light/50 bg-theme-bg border-t border-theme-card">
+        <p>&copy; 2026 Ariva Zweena</p>
+    </footer>
 	<script>
-(function() {
-    const greenLine = document.getElementById('greenLineOverlay');
-    const secondLine = document.getElementById('secondLineOverlay');
-    const thirdLine = document.getElementById('thirdLineOverlay');
-    let alreadyTriggered = false;
-    let flickerIntervals = [];
-
-    function startFlicker(lineElem) {
-        const interval = setInterval(() => {
-            const shift = Math.floor(Math.random() * 3) - 1;
-            lineElem.style.left = `calc(${lineElem.dataset.basePos} + ${shift}px)`;
-            lineElem.style.opacity = Math.random() > 0.5 ? '0.6' : '1';
-        }, Math.random() * 2000 + 3000);
-        flickerIntervals.push(interval);
-    }
-
-    function randomColor(optionSet) {
-        return optionSet[Math.floor(Math.random() * optionSet.length)];
-    }
-
-    function spawnLine(lineElem, basePos, colors) {
-        const chosen = randomColor(colors);
-        lineElem.style.backgroundColor = chosen.bg;
-        lineElem.style.boxShadow = `0 0 8px ${chosen.shadow}`;
-        lineElem.style.left = basePos + '%';
-        lineElem.dataset.basePos = basePos + '%';
-        lineElem.style.display = 'block';
-        startFlicker(lineElem);
-    }
-
-    function showGreenLine() {
-        if (window.innerWidth <= 768 && !alreadyTriggered) {
-            alreadyTriggered = true;
-
-            greenLine.style.display = 'block';
-            greenLine.dataset.basePos = '50%';
-            startFlicker(greenLine);
-
-            setTimeout(() => {
-                const pos2 = Math.floor(Math.random() * 80) + 10;
-                spawnLine(secondLine, pos2, [
-                    { bg: 'rgba(255,0,0,0.7)' },
-                    { bg: 'rgba(0,162,255,0.7)' }
-                ]);
-            }, 30000);
-
-            setTimeout(() => {
-                const pos3 = Math.floor(Math.random() * 80) + 10;
-                spawnLine(thirdLine, pos3, [
-                    { bg: 'rgba(255,0,0,0.7)'},
-                    { bg: 'rgba(0,162,255,0.7)'},
-                    { bg: 'rgba(255,255,0,0.7)'}
-                ]);
-            }, 60000);
-        }
-    }
-
-    document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') {
-            showGreenLine();
-        }
-    });
-
-    let touchTimer;
-    document.addEventListener('touchstart', () => {
-        touchTimer = setTimeout(showGreenLine, 500);
-    });
-    document.addEventListener('touchend', () => {
-        clearTimeout(touchTimer);
-    });
-
-    document.addEventListener('contextmenu', e => {
-        e.preventDefault();
-        showGreenLine();
-    });
-})();
-</script>
-	<script>
-  const bsodOverlay = document.getElementById('bsodOverlay');
-  let prankActive = false;
-
-  function goFullscreen(elem) {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) {
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) {
-      elem.msRequestFullscreen();
-    }
-  }
-
-  function triggerBSOD() {
-    bsodOverlay.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    prankActive = true;
-    goFullscreen(bsodOverlay);
-  }
-
-  document.addEventListener('fullscreenchange', () => {
-    if (prankActive && !document.fullscreenElement) {
-      goFullscreen(bsodOverlay);
-    }
-  });
-
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    triggerBSOD();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')) {
-      e.preventDefault();
-      triggerBSOD();
-    }
-  });
-</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			const dropdown = document.querySelector('.dropdown');
-			const dropbtn = document.querySelector('.dropbtn');
-			const dropdownContent = document.querySelector('.dropdown-content');
-			
-			dropbtn.addEventListener('click', function(e) {
-				e.preventDefault();
-				if (dropdownContent.style.display === 'block') {
-					dropdownContent.style.display = 'none';
-				} else {
-					dropdownContent.style.display = 'block';
-				}
-			});
-		
-			document.addEventListener('click', function(e) {
-				if (!dropdown.contains(e.target)) {
-					dropdownContent.style.display = 'none';
-				}
-			});
-		});
-		</script>
-		<script>
-			let slideIndex = 1;
-			showSlides(slideIndex);
-			
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-			
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-			
-			function showSlides(n) {
-			  let i;
-			  let slides = document.getElementsByClassName("mySlides");
-			  let dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}    
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-			  }
-			  for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";  
-			  dots[slideIndex-1].className += " active";
-			}
-			</script>
-			<script>
-				const translateBtn = document.getElementById('translateBtn');
-				let isIndonesian = false;
-				
-				translateBtn.addEventListener('click', function() {
-					if (!isIndonesian) {
-						// Translate to Indonesian
-						document.querySelector('.navbar a:nth-child(1)').textContent = 'Beranda';
-						document.querySelector('.navbar a:nth-child(2)').textContent = 'Tentang';
-						document.querySelector('.navbar a:nth-child(3)').textContent = 'Proyek';
-						document.querySelector('.navbar a:nth-child(4)').textContent = 'Kontak';
-						document.querySelector('.content h3').textContent = 'Halo, Saya';
-						document.querySelector('.content p').textContent = 'Saat ini, saya adalah mahasiswa Diploma IV jurusan Teknologi Informasi dengan minat yang kuat dalam pengembangan full stack. Saya memiliki pengalaman praktis dalam pengembangan frontend menggunakan Bootstrap dan Tailwind CSS, serta pengembangan backend dengan Laravel. Untuk manajemen database, saya terbiasa bekerja dengan TablePlus, MySQL, dan sebagainya.';
-						document.querySelector('.content .btn').textContent = 'Pelajari lebih lanjut';
-						
-						// About section
-						document.querySelector('.about .heading').innerHTML = '<span>Tentang </span>Saya';
-						document.querySelector('#pesat').textContent = 'Full Stack Developer';
-						document.querySelector('.about .content p:nth-child(2)').textContent = 'Saat ini, saya sedang menempuh program studi D4 Teknik Informatika di Politeknik Negeri Jakarta, bekerja sama dengan Fakultas Teknik CCIT, Universitas Indonesia. Perjalanan akademik saya didasarkan pada dasar yang saya peroleh dari SMK informatika pesat, di mana saya mengambil jurusan Rekayasa Perangkat Lunak dan mengembangkan minat yang kuat terhadap teknologi dan inovasi.';
-						document.querySelector('.about .content p:nth-child(3)').textContent = 'Saya memiliki keinginan untuk menjadi seorang Full Stack Developer, dengan keahlian di bidang pengembangan front-end dan back-end. Di sisi back-end, saya terampil menggunakan Laravel untuk membangun aplikasi yang tangguh dan skalabel. Untuk front-end, saya memanfaatkan Bootstrap dan Tailwind CSS untuk menciptakan antarmuka yang responsif, menarik secara visual, dan ramah pengguna. Pengalaman saya dalam seluruh siklus pengembangan—mulai dari perencanaan, pemrograman, hingga deployment—membekali saya untuk menyediakan solusi web yang lengkap dan efektif.';
-						document.querySelector('.about .btn').textContent = 'Unduh CV';
-
-						// Self-Branding Video section
-						document.querySelector('.about .content h3#pesat-video').textContent = 'Video Self-Branding';
-						document.querySelector('#about-video .content p:nth-of-type(1)').textContent = 
-							'Halo, nama saya Ariva Zweena. Perjalanan akademik saya dimulai di SMK Pesat, di mana saya mengambil jurusan Rekayasa Perangkat Lunak dan menemukan minat saya pada teknologi dan inovasi. Saya memiliki ketertarikan untuk menjadi seorang Full Stack Developer dengan pengalaman praktis dalam pengembangan back-end dan front-end.';
-						
-						document.querySelector('#about-video .content p:nth-of-type(2)').textContent = 
-							'Di sisi back-end, saya menggunakan Laravel untuk membangun aplikasi yang aman dan skalabel. Di sisi front-end, saya memanfaatkan Bootstrap dan Tailwind CSS untuk merancang antarmuka yang responsif, modern, dan ramah pengguna. Selain coding, saya senang memecahkan masalah, berkolaborasi dalam tim, dan terus belajar teknologi baru. Tujuan saya adalah menciptakan solusi digital yang berdampak, meningkatkan pengalaman pengguna, dan mendukung pertumbuhan bisnis.';
-						
-						document.querySelector('.about .content .btn').textContent = 'Unduh CV';
-				
-						// Projects section
-						document.querySelector('.products .heading').innerHTML = 'Proyek <span>Saya</span>';
-						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'Lihat detail');
-						
-						// More info section
-						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Tailwind & Bootstrap';
-						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Menyimpan, berbagi, dan berkolaborasi pada kode';
-						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Framework PHP open-source';
-
-						document.querySelector('.about#certification .heading').innerHTML = 'Sertifikasi <span>Saya</span>';
-						document.querySelector('.about#certification h3#pesat').textContent = 'Aplikasi web, desain web, dll';
-						document.querySelector('.about#certification .content p').textContent = 'Saya ingin terus belajar dan berkembang secara profesional, dan saya telah mendapatkan sertifikasi di berbagai bidang untuk meningkatkan keterampilan dan keahlian saya. Sertifikasi ini mencerminkan dedikasi saya untuk tetap mengikuti tren dan praktik terbaik industri. Setiap sertifikasi mewakili langkah penting dalam perjalanan saya untuk memberikan layanan dan solusi berkualitas tinggi. Di bawah ini adalah daftar sertifikasi yang telah saya peroleh, menunjukkan kemahiran saya di bidang-bidang utama dan komitmen saya untuk memberikan hasil yang luar biasa.';
-						document.querySelector('#certification .btn').textContent = 'Sertifikasi saya';
-				
-						// Footer
-						document.querySelector('.footer .box:nth-child(1) h3').textContent = 'Menu';
-						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'Aktivitas Saya';
-						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Alamat';
-						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Kontak';
-						document.querySelector('.credit').innerHTML = 'Dibuat oleh <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>';
-
-							document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Beranda';
-							document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'Tentang saya';
-							document.querySelector('.footer .box:nth-child(1) a:nth-child(4)').textContent = 'Proyek saya';
-							document.querySelector('.footer .box:nth-child(1) a:nth-child(5)').textContent = 'Kontak';	
-						
-						} else {
-						// Translate back to English
-						document.querySelector('.navbar a:nth-child(1)').textContent = 'Home';
-						document.querySelector('.navbar a:nth-child(2)').textContent = 'About';
-						document.querySelector('.navbar a:nth-child(3)').textContent = 'Projects';
-						document.querySelector('.navbar a:nth-child(4)').textContent = 'Contact';
-						document.querySelector('.content h3').textContent = "Hello, I'm";
-						document.querySelector('.content p').textContent = "I am currently a Diploma IV student majoring in Information Technology with a strong passion for full stack development. I have hands-on experience in frontend development using Bootstrap and Tailwind CSS, as well as backend development with Laravel. For database management, I am comfortable working with TablePlus, MySQL, etc";
-						document.querySelector('.content .btn').textContent = 'Learn more';
-
-						document.querySelector('.about .heading').innerHTML = '<span>About </span>Me';
-						document.querySelector('#pesat').textContent = 'Full Stack Developer';
-						document.querySelector('.about .content p:nth-child(2)').textContent = 'I am currently pursuing a D4 degree in Informatics Engineering at Politeknik Negeri Jakarta, in collaboration with CCIT Faculty of Engineering, Universitas Indonesia. My academic journey builds upon my foundation from pesat vocational high school, where I majored in Software Engineering and developed a strong passion for technology and innovation.';
-						document.querySelector('.about .content p:nth-child(3)').textContent = 'I am passionate about becoming a Full Stack Developer, with skills in both front-end and back-end development. On the back-end, I work comfortably with Laravel to build robust and scalable applications. For the front-end, I utilize Bootstrap and Tailwind CSS to create responsive, visually appealing, and user-friendly interfaces. My experience across the full development cycle—from planning and coding to deployment—equips me to deliver complete and effective web solutions.';
-						document.querySelector('.about .btn').textContent = 'Download CV';
-
-						document.querySelector('.about .content h3#pesat-video').textContent = 'Self-Branding Video';
-            
-						document.querySelector('#about-video .content p:nth-of-type(1)').textContent = 
-							'Hi, my name is Ariva Zweena. My academic journey began at Pesat Vocational High School, where I majored in Software Engineering and discovered my passion for technology and innovation. I am passionate about becoming a Full Stack Developer, with hands-on experience in both back-end and front-end development.';
-						
-						document.querySelector('#about-video .content p:nth-of-type(2)').textContent = 
-							'On the back-end, I work with Laravel to build secure and scalable applications. On the front-end, I use Bootstrap and Tailwind CSS to design responsive, modern, and user-friendly interfaces. Beyond coding, I enjoy solving problems, collaborating in teams, and continuously learning new technologies. My goal is to create impactful digital solutions that improve user experiences and support business growth.';
-						
-						document.querySelector('.about .content .btn').textContent = 'Download CV';
-
-						document.querySelector('.products .heading').innerHTML = 'My <span>Projects</span>';
-						document.querySelectorAll('.cart-btn').forEach(btn => btn.textContent = 'See more');
-
-						document.querySelector('.icons-container .icons:nth-child(2) .info span').textContent = 'Tailwind & Bootstrap';
-						document.querySelector('.icons-container .icons:nth-child(3) .info span').textContent = 'Storing, sharing, and collaborating on code';
-						document.querySelector('.icons-container .icons:nth-child(4) .info span').textContent = 'Open-source PHP framework';
-						
-						// Certification section
-						document.querySelector('.about#certification .heading').innerHTML = 'My <span>Certifications</span>';
-						document.querySelector('.about#certification h3#pesat').textContent = 'Web application, web design, etc';
-						document.querySelector('.about#certification .content p').textContent = 'I want to continuous learning and professional growth, and I have earned certifications in various fields to enhance my skills and expertise. These certifications reflect my dedication to staying current with industry trends and best practices. Each certification represents a significant step in my journey to provide high-quality services and solutions. Below is a list of the certifications I have obtained, showcasing my proficiency in key areas and my commitment to delivering exceptional results.';
-						document.querySelector('#certification .btn').textContent = 'My certifications';
-
-						document.querySelector('.footer .box:nth-child(1) a:nth-child(2)').textContent = 'Home';
-						document.querySelector('.footer .box:nth-child(1) a:nth-child(3)').textContent = 'About';
-						document.querySelector('.footer .box:nth-child(1) a:nth-child(4)').textContent = 'Projects';
-						document.querySelector('.footer .box:nth-child(1) a:nth-child(5)').textContent = 'Contact';
-
-						// Footer My Activities translation back to English
-						document.querySelector('.footer .box:nth-child(2) a:nth-child(2)').textContent = 'Github';
-						document.querySelector('.footer .box:nth-child(2) a:nth-child(3)').textContent = 'Spotify';
-
-						// Footer Address translation back to English
-						document.querySelector('.footer .box:nth-child(3) a:nth-child(2)').textContent = 'Jalan komplek PWI';
-						document.querySelector('.footer .box:nth-child(3) a:nth-child(3)').textContent = 'Cilebut barat, Bogor';
-						document.querySelector('.footer .box:nth-child(3) a:nth-child(4)').textContent = 'Sukaraja';
-
-						// Footer Contact translation back to English
-						document.querySelector('.footer .box:nth-child(4) a:nth-child(2)').textContent = 'Instagram';
-						document.querySelector('.footer .box:nth-child(4) a:nth-child(3)').textContent = 'Email';
-						document.querySelector('.footer .box:nth-child(4) a:nth-child(4)').textContent = 'Tiktok';
-
-						// Footer
-						document.querySelector('.footer .box:nth-child(1) h3').textContent = 'Quick links';
-						document.querySelector('.footer .box:nth-child(2) h3').textContent = 'My activities';
-						document.querySelector('.footer .box:nth-child(3) h3').textContent = 'Address';
-						document.querySelector('.footer .box:nth-child(4) h3').textContent = 'Contact';
-						document.querySelector('.credit').innerHTML = 'Made by <span><a href="https://github.com/LorentzaZweena" target="_blank">Zweena Ariva </a>';
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							theme: {
+								bg: '#222831',
+								card: '#393E46',
+								accent: '#00ADB5',
+								light: '#EEEEEE'
+							}
+						},
+						fontFamily: {
+							sans: ['Plus Jakarta Sans', 'sans-serif'],
+						}
 					}
-
-					// Footer Quick Links translation back to English
-					isIndonesian = !isIndonesian;
-				});
-				</script>
+				}
+			}
+		</script>
 </body>
 </html>
