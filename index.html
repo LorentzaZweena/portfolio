@@ -343,50 +343,102 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                 <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
-                    <div class="p-6">
-                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
-                            <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                        <div class="h-48 bg-theme-bg relative overflow-hidden"
+                            onclick="openModal(this.querySelector('img'))">
+
+                            <img src="./img/image.png"
+                                alt="Arctic Travels Preview"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-theme-card/80 to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-lg font-bold text-theme-light mb-2">Arctic Travels</h3>
-                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
-                            Luxury winter resort booking platform with PHP Carbon financial logic and Laravel Sanctum token API.
-                        </p>
+
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-theme-light mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-snowflake text-theme-accent text-sm"></i>
+                                Arctic Travels
+                            </h3>
+                            <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                                Luxury winter resort booking platform with PHP Carbon financial logic and Laravel Sanctum token API.
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Laravel</span>
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">REST API</span>
+
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg/60 flex flex-wrap gap-2">
+                        <a href="https://docs.google.com/document/d/1UWeFFB-sa4mx7XbjpnfLTd4ive_n-iRQvvL02elwcaA/edit?usp=sharing" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            Brief <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
+                        <a href="https://github.com/LorentzaZweena/Arctic-Travels.git" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            REST API <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
-                    <div class="p-6">
-                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
-                            <i class="fa-solid fa-briefcase"></i>
+                    <div>
+                        <div class="h-48 bg-theme-bg relative overflow-hidden"
+                            onclick="openModal(this.querySelector('img'))">
+
+                            <img src="./img/Screenshot_24-7-2026_102441_127.0.0.1.jpeg" alt="WorkNest Preview"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-theme-card/80 to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-lg font-bold text-theme-light mb-2">WorkNest</h3>
-                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
-                            Job portal web app with role management, custom filters, and Mailtrap API integration for emails.
-                        </p>
+
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-theme-light mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-briefcase text-theme-accent text-sm"></i>
+                                WorkNest
+                            </h3>
+                            <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                                Job portal web app with role management, custom filters, and Mailtrap API integration for emails.
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Laravel</span>
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">Mailtrap API</span>
+
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg/60 flex flex-wrap gap-2">
+                        <a href="https://github.com/LorentzaZweena/jobPortal" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            Laravel 12 <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
+                        <a href="https://github.com/LorentzaZweena/jobPortal" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            Mailtrap API <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="bg-theme-card border border-theme-card hover:border-theme-accent rounded-xl overflow-hidden shadow-lg group transition duration-300 flex flex-col justify-between">
-                    <div class="p-6">
-                        <div class="h-12 w-12 rounded-lg bg-theme-bg flex items-center justify-center mb-5 text-theme-accent text-xl group-hover:scale-110 transition duration-300">
-                            <i class="fa-solid fa-check-to-slot"></i>
+                    <div>
+                        <div class="h-48 bg-theme-bg relative overflow-hidden"
+                            onclick="openModal(this.querySelector('img'))">
+
+                            <img src="./img/chronicle.png" alt="Chronicle Preview"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-theme-card/80 to-transparent opacity-60"></div>
                         </div>
-                        <h3 class="text-lg font-bold text-theme-light mb-2">OSIS Voting System</h3>
-                        <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
-                            Online voting system using PHP & MySQL with user authentication, handling 100+ active voters.
-                        </p>
+
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-theme-light mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-book text-theme-accent text-sm"></i>
+                                The Chronicle
+                            </h3>
+                            <p class="text-xs text-theme-light/70 mb-5 leading-relaxed">
+                                Full-stack life-journaling platform featuring structured timeline analytics, interactive mood tracking, and CSV/JSON/PDF data export capabilities.
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg flex flex-wrap gap-2">
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">PHP</span>
-                        <span class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded">MySQL</span>
+
+                    <div class="px-6 py-4 bg-theme-bg/50 border-t border-theme-bg/60 flex flex-wrap gap-2">
+                        <a href="https://docs.google.com/document/d/1SdPAk-5GAJ_HP5jqCC45uMzX9Z5NiK6vs9z41FYOMn0/edit?usp=sharing" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            Brief <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
+                        <a href="https://github.com/LorentzaZweena/chronicle-web-life-timeline" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            React + TS <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
+                        <a href="https://github.com/LorentzaZweena/chronicle-api-life-timeline" target="_blank" class="bg-theme-card text-[10px] font-semibold text-theme-accent px-2.5 py-1 rounded border border-theme-accent/20 hover:bg-theme-accent hover:text-theme-bg transition flex items-center gap-1">
+                            Laravel API <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -573,5 +625,51 @@
 				}
 			}
 		</script>
+        <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-white hover:text-theme-accent text-3xl font-bold z-10 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center">
+                <img id="modalImage" src="" alt="Enlarged Preview" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl border border-theme-accent/30">
+                <p id="modalCaption" class="text-theme-light text-sm mt-3 font-semibold text-center"></p>
+            </div>
+        </div>
+
+        <script>
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('modalCaption');
+
+            function openModal(element) {
+                console.log("Klik:", element);
+                console.log("src:", element.src);
+
+                modal.classList.remove('hidden');
+
+                modalImg.onload = () => console.log("Gambar berhasil dimuat");
+                modalImg.onerror = () => console.log("Gagal memuat gambar");
+
+                modalImg.src = element.src;
+                captionText.textContent = element.alt;
+            }
+
+            function closeModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        </script>
 </body>
 </html>
